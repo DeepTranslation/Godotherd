@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Horse.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Images/horse-white-front.png" type="Texture" id=2]
+
+[node name="Horse" type="RigidBody2D"]
+collision_layer = 7
+script = ExtResource( 1 )
+
+[node name="PlayerSprite" type="Sprite" parent="."]
+rotation = -1.5708
+texture = ExtResource( 2 )
+region_rect = Rect2( 288, 288, 64, 64 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -12.0355, -10.5941, -19.2125, -0.288647, -12.2195, 10.5689, 31.5787, 8.17656, 30.1065, -8.20177 )
