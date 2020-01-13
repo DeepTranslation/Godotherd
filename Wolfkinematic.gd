@@ -1,5 +1,7 @@
 extends "res://Animalkinematic.gd"
 
+import numpy 
+
 var horseposition
 var collisions
 var target #food
@@ -35,7 +37,9 @@ func _process(delta):
 func _physics_process(delta):
 	update()
 	var motion = Vector2()
-
+	
+	# if wolf catches horse, horse is respawned at another location, 
+	# and a new round is started
 
 
 	motion = motion.normalized() * MOTION_SPEED
