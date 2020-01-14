@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Wolfkinematic.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Images/wolf-front.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Teko/Teko-Regular.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 3 )
 
 [node name="Wolf" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -19,5 +23,14 @@ light_mask = 6
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Visibility"]
 polygon = PoolVector2Array( -6.03017, -62.8604, 60.8692, -89.6201, 143.657, -59.0973, 167.072, -0.560394, 147.002, 60.4853, 62.9598, 88.4994, -4.77582, 74.7014, 11.5309, -0.142273 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = -15.4705
+margin_top = -12.5436
+margin_right = 24.5295
+margin_bottom = 11.4564
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Test"
 [connection signal="body_entered" from="Visibility" to="." method="_on_Visibility_body_entered"]
 [connection signal="body_exited" from="Visibility" to="." method="_on_Visibility_body_exited"]

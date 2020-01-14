@@ -1,7 +1,13 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Horsekinematic.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Images/horse-white-front.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Teko/Teko-Regular.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 20
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
 
 [node name="Horse" type="KinematicBody2D"]
 collision_layer = 7
@@ -13,12 +19,23 @@ texture = ExtResource( 2 )
 region_rect = Rect2( 288, 288, 64, 64 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
 polygon = PoolVector2Array( -12.0355, -10.5941, -19.2125, -0.288647, -12.2195, 10.5689, 31.5787, 8.17656, 30.1065, -8.20177 )
 
 [node name="Visibility" type="Area2D" parent="."]
+visible = false
 light_mask = 6
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Visibility"]
 polygon = PoolVector2Array( -90.2437, -16.8041, -14.7823, -104.072, 104.313, -121.526, 185.421, -39.3912, 187.988, 42.2303, 106.88, 114.098, -16.3223, 102.291, -89.7303, 24.7767, 12.4248, -0.377106 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = -13.8602
+margin_top = -13.8602
+margin_right = 26.1398
+margin_bottom = 16.1398
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Test"
 [connection signal="body_entered" from="Visibility" to="." method="_on_Visibility_body_entered"]
 [connection signal="body_exited" from="Visibility" to="." method="_on_Visibility_body_exited"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://GameScene.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Teko/Teko-Regular.ttf" type="DynamicFontData" id=2]
@@ -6,6 +6,12 @@
 [ext_resource path="res://HorseKinematic.tscn" type="PackedScene" id=4]
 [ext_resource path="res://WolfKinematic.tscn" type="PackedScene" id=5]
 [ext_resource path="res://PythonTest.tscn" type="PackedScene" id=6]
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=1]
 size = 32
@@ -19,11 +25,11 @@ script = ExtResource( 1 )
 layer = 3
 
 [node name="Rounds" type="Label" parent="HUD"]
-margin_left = 1159.03
-margin_top = 24.4867
-margin_right = 1253.03
-margin_bottom = 71.4866
-custom_fonts/font = SubResource( 1 )
+margin_left = 1150.87
+margin_top = 29.9282
+margin_right = 1244.87
+margin_bottom = 76.9282
+custom_fonts/font = SubResource( 2 )
 text = "Rounds: 0"
 align = 2
 
@@ -37,7 +43,7 @@ align = 2
 
 [node name="Tileset" parent="." instance=ExtResource( 3 )]
 
-[node name="Horse" parent="." instance=ExtResource( 4 )]
+[node name="Horse0" parent="." instance=ExtResource( 4 )]
 light_mask = 4098
 position = Vector2( 599.923, 420.354 )
 
@@ -77,7 +83,7 @@ position = Vector2( 927.772, 406.75 )
 light_mask = 4098
 position = Vector2( 867.916, 240.785 )
 
-[node name="Wolf" parent="." instance=ExtResource( 5 )]
+[node name="Wolf0" parent="." instance=ExtResource( 5 )]
 light_mask = 2052
 position = Vector2( 274.795, 416.273 )
 

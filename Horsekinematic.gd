@@ -1,15 +1,20 @@
 extends "res://Animalkinematic.gd"
 
 var target #food
+var targets = []
 var wolfposition
 var target_path
 var target_node
-var my_array = load("array_2d.gd") 
+#var my_array = load("array_2d.gd") 
+var label_text
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	label_text = self.name.lstrip("Horse")
 	
-	pass # Replace with function body.
+	$Label.text = label_text
+	print(label_text)
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -34,6 +39,11 @@ func _physics_process(delta):
 
 func _on_Visibility_body_entered(body):
 	# connect this to the "body_entered" signal
+	if targets.find(body) or targets.size()>4:
+		pass
+	else:
+		targets.append(body)
+		print(targets)
 	if target:
 		return
 	if "Wolf" in body.name:
@@ -49,3 +59,6 @@ func _on_Visibility_body_exited(body):
 	if body == target:
 		target = null
 		$PlayerSprite.self_modulate.r = 1.0
+	if targets.find(body)>-1:
+		targets.remove(targets.find(body))
+		
