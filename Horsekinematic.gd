@@ -39,7 +39,7 @@ func _on_Visibility_body_entered(body):
 	if body.name == "Wolf":
 		target = body
 	#print("Horse: ",body.name)
-	$PlayerSprite.self_modulate.r = 1.0
+		$PlayerSprite.self_modulate.r = 0.2
 	
 
 
@@ -48,4 +48,4 @@ func _on_Visibility_body_exited(body):
 	# connect this to the "body_exited" signal
 	if body == target:
 		target = null
-		$PlayerSprite.self_modulate.r = 0.2
+		$PlayerSprite.self_modulate.r = 1.0
