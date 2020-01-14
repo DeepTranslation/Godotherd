@@ -46,10 +46,10 @@ func _physics_process(delta):
 
 	collisions = move_and_collide(-motion)
 	if collisions:
-		if collisions.collider.name=="Horse":
+		if "Horse" in collisions.collider.name:
 			var x = rand_range(10, 1200)
 			var y = rand_range(30, 600)
-			get_node("/root/GameSceneRoot/Horse").position = Vector2(x, y)
+			get_node("/root/GameSceneRoot/"+collisions.collider.name).position = Vector2(x, y)
 			globals.rounds += 1
 	
 	if target:
@@ -60,7 +60,7 @@ func _on_Visibility_body_entered(body):
 	# connect this to the "body_entered" signal
 	if target:
 		return
-	if body.name == "Horse":
+	if "Horse" in body.name:
 		target = body
 		
 	#print("Wolf: ",body.name)

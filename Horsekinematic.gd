@@ -36,7 +36,7 @@ func _on_Visibility_body_entered(body):
 	# connect this to the "body_entered" signal
 	if target:
 		return
-	if body.name == "Wolf":
+	if "Wolf" in body.name:
 		target = body
 	#print("Horse: ",body.name)
 		$PlayerSprite.self_modulate.r = 0.2

@@ -41,9 +41,53 @@ align = 2
 light_mask = 4098
 position = Vector2( 599.923, 420.354 )
 
+[node name="Horse3" parent="." instance=ExtResource( 4 )]
+light_mask = 4098
+position = Vector2( 1032.52, 149.64 )
+
+[node name="Horse4" parent="." instance=ExtResource( 4 )]
+light_mask = 4098
+position = Vector2( 767.249, 334.651 )
+
+[node name="Horse5" parent="." instance=ExtResource( 4 )]
+light_mask = 4098
+position = Vector2( 869.276, 492.454 )
+
+[node name="Horse6" parent="." instance=ExtResource( 4 )]
+light_mask = 4098
+position = Vector2( 194.533, 165.965 )
+
+[node name="Horse7" parent="." instance=ExtResource( 4 )]
+light_mask = 4098
+position = Vector2( 172.767, 546.868 )
+
+[node name="Horse8" parent="." instance=ExtResource( 4 )]
+light_mask = 4098
+position = Vector2( 410.832, 571.355 )
+
+[node name="Horse9" parent="." instance=ExtResource( 4 )]
+light_mask = 4098
+position = Vector2( 484.292, 155.082 )
+
+[node name="Horse10" parent="." instance=ExtResource( 4 )]
+light_mask = 4098
+position = Vector2( 927.772, 406.75 )
+
+[node name="Horse2" parent="." instance=ExtResource( 4 )]
+light_mask = 4098
+position = Vector2( 867.916, 240.785 )
+
 [node name="Wolf" parent="." instance=ExtResource( 5 )]
 light_mask = 2052
 position = Vector2( 274.795, 416.273 )
+
+[node name="Wolf2" parent="." instance=ExtResource( 5 )]
+light_mask = 2052
+position = Vector2( 565.914, 212.217 )
+
+[node name="Wolf3" parent="." instance=ExtResource( 5 )]
+light_mask = 2052
+position = Vector2( 1077.41, 599.923 )
 
 [node name="Python" parent="." instance=ExtResource( 6 )]
 position = Vector2( 97.9467, 89.7844 )
