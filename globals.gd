@@ -4,6 +4,7 @@ extends Node
 var currentStage = 1
 var kills = 0
 var rounds = 0
+var hello = ''
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

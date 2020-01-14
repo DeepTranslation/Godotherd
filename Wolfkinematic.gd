@@ -1,6 +1,6 @@
 extends "res://Animalkinematic.gd"
 
-import numpy 
+ 
 
 var horseposition
 var collisions
@@ -63,7 +63,7 @@ func _on_Visibility_body_entered(body):
 	if body.name == "Horse":
 		target = body
 		
-	print("Wolf: ",body.name)
+	#print("Wolf: ",body.name)
 	$PlayerSprite.self_modulate.b = 1.0
 	
 	
