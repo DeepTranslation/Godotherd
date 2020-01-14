@@ -4,6 +4,8 @@ from godot.globals import *
 
 
 
+
+
 @exposed
 class PythonTest(Node2D):
 
@@ -16,10 +18,15 @@ class PythonTest(Node2D):
 		Called every time the node is added to the scene.
 		Initialization here.
 		"""
-		globals.hello = "Hello World!"
+		
 		print ('Hello World!')
+		
+		
+	def _process(self, delta):
+		globals.hello = "Hello World!"
 		self.position.x = 1000
 		self.position.y = 1000
 		self.visibility = True 
 		self.text = "Hello World!"
 		
+	
