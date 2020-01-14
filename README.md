@@ -1,6 +1,6 @@
 # Godotherd
 
-![Logo Image](./Godotherd/blob/master/icon.png)
+![Logo Image](./icon.png)
 
 Horse simulation created with the Godot game engine
 
