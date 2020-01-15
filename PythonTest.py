@@ -6,11 +6,6 @@ import numpy
 import sklearn
 
 
-
-
-
-
-
 @exposed
 class PythonTest(Node2D):
 
@@ -24,15 +19,17 @@ class PythonTest(Node2D):
 		Initialization here.
 		"""
 		
-		print ('Hello World!')
-		
+		#print ('Hello World!')
+		pass
 		
 	def _process(self, delta):
 		
 		globals.hello = "Hello World!?!{}".format(numpy.zeros(3))
-		self.position.x = 1000
-		self.position.y = 1000
-		self.visibility = True 
-		self.text = "Hello World!!!!!"
+		#self.position.x = 1000
+		#self.position.y = 1000
+		#self.visibility = True 
+		#self.text = "Hello World!!!!!"
+	
+	
 		
 	

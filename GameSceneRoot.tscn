@@ -7,13 +7,13 @@
 [ext_resource path="res://WolfKinematic.tscn" type="PackedScene" id=5]
 [ext_resource path="res://PythonTest.tscn" type="PackedScene" id=6]
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=1]
 size = 32
 outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFont" id=2]
 size = 32
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 2 )
@@ -29,7 +29,7 @@ margin_left = 1150.87
 margin_top = 29.9282
 margin_right = 1244.87
 margin_bottom = 76.9282
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
 text = "Rounds: 0"
 align = 2
 
@@ -38,7 +38,7 @@ margin_left = 54.4093
 margin_top = 606.725
 margin_right = 148.409
 margin_bottom = 653.725
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
 align = 2
 
 [node name="Tileset" parent="." instance=ExtResource( 3 )]

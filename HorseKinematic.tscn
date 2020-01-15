@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Horsekinematic.gd" type="Script" id=1]
+[ext_resource path="res://HorsekinematicEvolution.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Images/horse-white-front.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Teko/Teko-Regular.ttf" type="DynamicFontData" id=3]
 
