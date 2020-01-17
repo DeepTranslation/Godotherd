@@ -46,7 +46,7 @@ func _process(delta):
 		value[0]= 3.0
 		value[1]= 4.0
 		
-		#first_evolution.move(angle_to_target,distance_to_target,value)
+		first_evolution.move(angle_to_target,distance_to_target,value)
 		#print(value)
 		move_angle = value[0]
 		move_speed = value[1]

@@ -19,11 +19,9 @@ texture = ExtResource( 2 )
 region_rect = Rect2( 288, 288, 64, 64 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-visible = false
 polygon = PoolVector2Array( -12.0355, -10.5941, -19.2125, -0.288647, -12.2195, 10.5689, 31.5787, 8.17656, 30.1065, -8.20177 )
 
 [node name="Visibility" type="Area2D" parent="."]
-visible = false
 light_mask = 6
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Visibility"]

@@ -13,7 +13,7 @@ region_rect = Rect2( 384, 1312, 32, 32 )
 [node name="StaticBody2D" type="StaticBody2D" parent="Tile1"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tile1/StaticBody2D"]
-polygon = PoolVector2Array( 15.7854, 15.5063, 15.7854, 2.01617, 8.29093, 6.96255, 4.69356, 15.8061 )
+polygon = PoolVector2Array( 16.1219, 16.1382, 16.0224, 2.11711, 8.29093, 6.96255, 4.38791, 16.0387 )
 
 [node name="Tile2" type="Sprite" parent="."]
 position = Vector2( 57.4161, 16.1943 )
@@ -24,7 +24,7 @@ region_rect = Rect2( 416, 1312, 32, 32 )
 [node name="StaticBody2D" type="StaticBody2D" parent="Tile2"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tile2/StaticBody2D"]
-polygon = PoolVector2Array( -15.7751, 1.96265, 15.8517, 1.81276, 15.8517, 15.9025, -15.6252, 15.7526 )
+polygon = PoolVector2Array( -15.9812, 2.01315, 16.0386, 1.81427, 15.8517, 15.9025, -15.6252, 15.7526 )
 
 [node name="Tile3" type="Sprite" parent="."]
 position = Vector2( 93.3011, 16.3783 )
@@ -35,7 +35,7 @@ region_rect = Rect2( 448, 1312, 32, 32 )
 [node name="StaticBody2D" type="StaticBody2D" parent="Tile3"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tile3/StaticBody2D"]
-polygon = PoolVector2Array( -15.8364, 2.67797, -6.99285, 8.07403, -1.74668, 15.2688, -15.8364, 15.7184 )
+polygon = PoolVector2Array( -15.8364, 2.67797, -6.99285, 8.07403, -1.35056, 16.0491, -15.8688, 16.248 )
 
 [node name="Tile4" type="Sprite" parent="."]
 position = Vector2( 16.483, 52.9799 )
@@ -46,7 +46,8 @@ region_rect = Rect2( 384, 1344, 32, 32 )
 [node name="StaticBody2D" type="StaticBody2D" parent="Tile4"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tile4/StaticBody2D"]
-polygon = PoolVector2Array( 4.32318, -15.9368, 16.0146, -15.7869, 15.8647, 15.2404, 3.12406, 15.6901 )
+position = Vector2( 0, -0.11018 )
+polygon = PoolVector2Array( 4.32318, -15.9368, 16.0146, -15.7869, 15.8707, 16.2558, 3.08944, 16.1456 )
 
 [node name="Tile5" type="Sprite" parent="."]
 position = Vector2( 57.3774, 52.0761 )
@@ -68,7 +69,7 @@ region_rect = Rect2( 448, 1344, 32, 32 )
 [node name="StaticBody2D" type="StaticBody2D" parent="Tile6"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tile6/StaticBody2D"]
-polygon = PoolVector2Array( -16.0601, -15.9324, -1.52076, -15.7825, -1.37087, 15.6945, -15.9102, 15.6945 )
+polygon = PoolVector2Array( -16.0601, -15.9324, -1.44302, -15.8953, -1.22265, 15.8374, -15.9102, 15.6945 )
 
 [node name="Tile7" type="Sprite" parent="."]
 position = Vector2( 16.4831, 89.5814 )
@@ -101,7 +102,7 @@ region_rect = Rect2( 448, 1376, 32, 32 )
 [node name="StaticBody2D" type="StaticBody2D" parent="Tile9"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tile9/StaticBody2D"]
-polygon = PoolVector2Array( -15.9168, -16.0345, -2.4267, -15.8847, -7.67287, -7.64069, -15.9168, -3.44376 )
+polygon = PoolVector2Array( -15.9168, -16.0345, -2.46806, -15.8004, -7.67287, -7.64069, -15.9168, -3.44376 )
 
 [node name="Tile15" type="Sprite" parent="."]
 position = Vector2( 133.255, 16.3038 )
@@ -112,7 +113,7 @@ region_rect = Rect2( 416, 1248, 32, 32 )
 [node name="StaticBody2D" type="StaticBody2D" parent="Tile15"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tile15/StaticBody2D"]
-polygon = PoolVector2Array( -15.9168, -16.0345, 15.5421, -16.4322, 15.8656, -4.13792, 2.54811, 4.37428, -1.92876, 15.9212, -15.5172, 15.9212 )
+polygon = PoolVector2Array( -15.9168, -16.0345, 16.1889, -15.7851, 15.8656, -4.13792, 2.54811, 4.37428, -1.92876, 15.9212, -15.9477, 16.1054 )
 
 [node name="Tile16" type="Sprite" parent="."]
 position = Vector2( 174.02, 16.3038 )
@@ -123,7 +124,7 @@ region_rect = Rect2( 448, 1248, 32, 32 )
 [node name="StaticBody2D" type="StaticBody2D" parent="Tile16"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tile16/StaticBody2D"]
-polygon = PoolVector2Array( -15.9168, -16.0345, 15.5421, -16.4322, 15.5421, 15.2741, 4.54192, 15.2741, -3.22289, 0.71508, -15.5172, -6.07912 )
+polygon = PoolVector2Array( -15.9168, -16.0345, 16.1015, -15.9685, 16.1015, 16.0244, 4.43831, 15.9434, -3.22289, 0.71508, -15.8104, -5.9252 )
 
 [node name="Tile17" type="Sprite" parent="."]
 position = Vector2( 174.02, 52.216 )
@@ -134,7 +135,7 @@ region_rect = Rect2( 448, 1280, 32, 32 )
 [node name="StaticBody2D" type="StaticBody2D" parent="Tile17"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tile17/StaticBody2D"]
-polygon = PoolVector2Array( -1.92876, -3.16733, 3.24779, -16.7557, 15.5421, -16.4322, 15.5421, 15.2741, -15.5172, 15.2741, -15.5172, 1.03861 )
+polygon = PoolVector2Array( -1.92876, -3.16733, 2.90431, -16.0621, 16.1865, -16.1519, 16.0071, 15.7973, -15.9421, 15.7973, -15.9421, 1.07914 )
 
 [node name="Tile18" type="Sprite" parent="."]
 position = Vector2( 133.255, 51.8925 )
@@ -145,7 +146,7 @@ region_rect = Rect2( 416, 1280, 32, 32 )
 [node name="StaticBody2D" type="StaticBody2D" parent="Tile18"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tile18/StaticBody2D"]
-polygon = PoolVector2Array( -3.2229, -15.7851, 2.92424, -2.8438, 14.895, 1.03861, 15.5421, 15.2741, -15.5172, 15.2741, -15.5172, -16.4322 )
+polygon = PoolVector2Array( -3.2229, -15.7851, 2.92424, -2.8438, 16.2074, 1.40263, 16.2074, 15.8516, -15.8315, 15.8516, -15.9477, -16.0006 )
 
 [node name="Tile10" type="Sprite" parent="."]
 position = Vector2( 17.2842, 126.564 )
