@@ -19,6 +19,7 @@ onready var first_evolution = DefaultEvolution.new()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	# Putting a number on the horses ass
 	label_text = self.name.lstrip("Horse")
 	#$Label.text = str(first_evolution.move())
 	$Label.text = label_text

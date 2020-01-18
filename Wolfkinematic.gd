@@ -13,6 +13,7 @@ var label_text
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	speed = 50
+	# Putting a number on the wolf's ass
 	label_text = self.name.lstrip("Wolf")
 	$Label.text = label_text
 	print(label_text)
