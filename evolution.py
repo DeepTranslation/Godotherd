@@ -25,11 +25,11 @@ class Evolution(Object):
 	def _ready(self):
 		self.start = True
 		
-	def scaler(value, min, max):
+	def scaler(self, value, min, max):
 		scaled_value = (value - min) / (max - min)
 		return scaled_value
 		
-	def de_scaler(scaled_value, min, max):
+	def de_scaler(self, scaled_value, min, max):
 		value = (scaled_value * (max - min)) + min
 		return value
 		
@@ -48,9 +48,9 @@ class Evolution(Object):
 			
 			# scaling input values
 			# scaling angles from radians between 0 and 2pi to between 0 and 1
-			X_array[0,0]=scaler(X_array[0,0],0,2*numpy.pi)
+			X_array[0,0]=self.scaler(X_array[0,0],0,2*numpy.pi)
 			# scaling speed from between 0 and 100 to between 0 and 1
-			X_array[0,1]=scaler(X_array[0,1],0,100)
+			X_array[0,1]=self.scaler(X_array[0,1],0,100)
 			
 			#create output array for initial fit
 			y_array = numpy.zeros((1,2))
@@ -74,9 +74,9 @@ class Evolution(Object):
 			#y_array = numpy.random.rand(2)
 		y_array2= mlp.predict(X_array)
 		#rescaling output values
-		y_array2[0,0]=de_scaler(y_array2[0,0],0,2*numpy.pi)
+		y_array2[0,0]=self.de_scaler(y_array2[0,0],0,2*numpy.pi)
 	
-		y_array2[0,1]=de_scaler(y_array2[0,1],0,100)
+		y_array2[0,1]=self.de_scaler(y_array2[0,1],0,100)
 			
 		value[0]=y_array2[0,0] #angle
 		value[1]=y_array2[0,1] #speed
