@@ -8,13 +8,15 @@ var _moveCamera: bool = false;
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
 
-
+# Zoom Camera
+func _zoom_camera(dir):
+	zoom += Vector2(0.1, 0.1) * dir
 
 func _unhandled_input(event: InputEvent):
 	if event is InputEventMouseButton && event.button_index == BUTTON_LEFT:
@@ -28,3 +30,12 @@ func _unhandled_input(event: InputEvent):
 		get_tree().set_input_as_handled();
 		position += (_previousPosition - event.position);
 		_previousPosition = event.position;
+	
+	# Wheel Up Event
+	if event.is_action_pressed("zoom_in"):
+		print("zoom in")
+		_zoom_camera(-1)
+    # Wheel Down Event
+	elif event.is_action_pressed("zoom_out"):
+		print("zoom out")
+		_zoom_camera(1)

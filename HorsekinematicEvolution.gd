@@ -52,6 +52,7 @@ func _process(delta):
 		move_angle = value[0]
 		move_speed = value[1]
 		rotation+= mouseposition.angle() * 0.1
+		#rotation+= mouseposition.angle() * 0.1
 		#rotation = move_angle
 		#if move_speed < speed:
 		#	move_local_x(move_speed*delta)
