@@ -56,8 +56,8 @@ class Evolution(Object):
 			y_array = numpy.zeros((1,2))
 			y_array[0,0]=angle_to_target
 			y_array[0,1]=55
-			mlp = MLPRegressor(hidden_layer_sizes=(number_hidden_layers, number_output_values),solver='lbfgs',
-		                             tol=1e-2, max_iter=10, random_state=0)
+			mlp = MLPRegressor(hidden_layer_sizes=(number_hidden_layers, number_output_values), activation='logistic' ,
+		                             solver='lbfgs',tol=1e-2, max_iter=10, random_state=0)
 
 			#‘lbfgs’ is an optimizer in the family of quasi-Newton methods.
 			mlp.fit(X_array,y_array)
@@ -74,12 +74,12 @@ class Evolution(Object):
 			#y_array = numpy.random.rand(2)
 		y_array2= mlp.predict(X_array)
 		#rescaling output values
-		y_array2[0,0]=self.de_scaler(y_array2[0,0],0,2*numpy.pi)
+		y_array2[0,0]=self.de_scaler(y_array2[0,0],0,numpy.pi/4)
 	
 		y_array2[0,1]=self.de_scaler(y_array2[0,1],0,100)
 			
 		value[0]=y_array2[0,0] #angle
 		value[1]=y_array2[0,1] #speed
-		
+		print(X_array,y_array2)
 		#return value
 		#the return values are stored directly in the godot array
