@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://GameScene.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Teko/Teko-Regular.ttf" type="DynamicFontData" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://HorseKinematic.tscn" type="PackedScene" id=6]
 [ext_resource path="res://WolfKinematic.tscn" type="PackedScene" id=7]
 [ext_resource path="res://PythonTest.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Horses.tscn" type="PackedScene" id=9]
 
 [sub_resource type="DynamicFont" id=1]
 size = 32
@@ -108,3 +109,5 @@ position = Vector2( 1077.41, 599.923 )
 
 [node name="Python" parent="." instance=ExtResource( 8 )]
 position = Vector2( 97.9467, 89.7844 )
+
+[node name="Horses" parent="." instance=ExtResource( 9 )]

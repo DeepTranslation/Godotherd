@@ -31,6 +31,8 @@ func _unhandled_input(event: InputEvent):
 		position += (_previousPosition - event.position);
 		_previousPosition = event.position;
 	
+	
+	# TODO: zooming in and out
 	# Wheel Up Event
 	if event.is_action_pressed("zoom_in"):
 		print("zoom in")

@@ -51,10 +51,11 @@ func _physics_process(delta):
 	collisions = move_and_collide(-motion)
 	if collisions:
 		if "Horse" in collisions.collider.name:
+			#print(collisions.collider.name)
 			var spawntile=rand_range(0,globals.grasstiles.size())
 			var x = globals.grasstiles[spawntile][0]*globals.tilesize +int(globals.tilesize/2)
 			var y = globals.grasstiles[spawntile][1]*globals.tilesize +int(globals.tilesize/2)
-			get_node("/root/GameSceneRoot/"+collisions.collider.name).position = Vector2(x, y)
+			#get_node("/root/GameSceneRoot/Horses"+collisions.collider.name).position = Vector2(x, y)
 			globals.rounds += 1
 	
 	if target:

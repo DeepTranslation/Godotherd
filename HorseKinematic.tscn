@@ -12,6 +12,9 @@ font_data = ExtResource( 3 )
 [node name="Horse" type="KinematicBody2D"]
 collision_layer = 7
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="PlayerSprite" type="Sprite" parent="."]
 rotation = -1.5708

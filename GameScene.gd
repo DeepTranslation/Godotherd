@@ -1,13 +1,18 @@
 extends Node2D
 
+export (PackedScene) var Horses
+#export (PackedScene) var HorseKinematic
+
 func _ready():
 	globals.kills = 0
 	globals.currentStage = 0
 	globals.hello = ''
 	var labelText = "Message: " + str(globals.rounds)
 	var helloText = ""+ str(globals.hello)
+	randomize()
 	$HUD/Rounds.set_text(labelText)
 	$HUD/Hello.set_text(helloText)
+	#Horses.spawning_horses(00)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Godotherd"
-run/main_scene="res://TitleScene.tscn"
+run/main_scene="res://GameSceneRoot.tscn"
 config/icon="res://icon.png"
 
 [autoload]

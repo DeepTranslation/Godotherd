@@ -15,7 +15,8 @@ var move_speed
 var value : Array
 
 const DefaultEvolution = preload("evolution.py") # Relative path
-onready var first_evolution = DefaultEvolution.new()
+onready var first_evolution = DefaultEvolution.new() # when this line throws an error there is usually a 
+# syntax error in evolution.py
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -48,9 +49,10 @@ func _process(delta):
 		value[1]= 4.0
 		
 		first_evolution.move(angle_to_target,distance_to_target,value)
-		#print(value)
+		#first_evolution.move returns the return values in value
 		move_angle = value[0]
 		move_speed = value[1]
+		print(value)
 		#rotation+= mouseposition.angle() * 0.1
 		rotation += move_angle 
 		#rotation = move_angle

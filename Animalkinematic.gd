@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-var speed = 55
+var speed = 50
 var mouseposition
 const MOTION_SPEED = 160 # Pixels/second
 
